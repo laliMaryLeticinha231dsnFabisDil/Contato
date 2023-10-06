@@ -1,0 +1,21 @@
+body{
+    background-color: pink;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+h2{
+    margin-top: 0;
+}
+
+.container{
+    display: flex;
+    width: 700px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 60px;
+    border-radius: 12px;
+    box-shadow: 10px, 10px, 10px, 10px black;
+}
