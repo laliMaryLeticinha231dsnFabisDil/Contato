@@ -51,7 +51,8 @@ body {
     box-shadow: 10px, 10px, 10px, 10px black;
 }
 
-#contato-Form, .titulo{
+#contato-Form,
+.titulo {
     margin-bottom: 80px;
 }
 
@@ -62,19 +63,28 @@ body {
 }
 
 input {
+    font-family: Quick ;
+    text-align:left;
     display: flex;
     width: 500px;
     height: 30px;
     margin-left: -340px;
     margin-bottom: 20px;
+    background-color: #7b52b900;
+    border: 0 none;
+    border-bottom: 2px solid black;
+    outline: 0;
 }
-#contato-Form{
+
+#contato-Form {
     margin-top: 50px;
 }
 
-#Mensagem{
+#Mensagem {
+    text-align: left;
+    font-family: Quick ;
     width: 500px;
-    height:100px ;
+    height: 100px;
     margin-left: -340px;
     margin-bottom: 20px;
 }
@@ -85,46 +95,52 @@ input {
 
 
 /* Estilo do botão */
-#mostrar-contatos, #ocultar-contatos, #adicionar{
+#mostrar-contatos,
+#ocultar-contatos,
+#adicionar {
     width: 160px;
     height: 40px;
     border-radius: 10px;
-    
+
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.573);
-   
+
 }
 
 
-.botoes{
-    display: flex; /* Cria um contexto flexível para os botões */
-    justify-content: space-between; /* Distribui o espaço entre os botões */
+.botoes {
+    display: flex;
+    /* Cria um contexto flexível para os botões */
+    justify-content: space-between;
+    /* Distribui o espaço entre os botões */
 }
 
 button {
-    padding: 10px 20px; /* Adiciona preenchimento para espaçamento interno */
+    padding: 10px 20px;
+    /* Adiciona preenchimento para espaçamento interno */
     /* Outros estilos dos botões, como cores de fundo, cores de texto, etc. */
 }
 
 
-#ocultar-contatos{
+#ocultar-contatos {
     margin-left: -550px;
     margin-top: 265px;
 }
 
-#adicionar{
+#adicionar {
     margin-left: -710px;
 
 }
 
 
-#mostrar-contatos{
+#mostrar-contatos {
     margin-left: -130px;
     margin-top: 265px;
 }
 
-#contato-lista{
+#contato-lista {
     font-family: Quick;
-  margin-top: 450px;
-  margin-left: -490px;
+    margin-top: 450px;
+    margin-left: -490px;
     display: flex;
 }
+
