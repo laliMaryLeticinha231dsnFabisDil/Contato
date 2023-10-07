@@ -1,21 +1,130 @@
-body{
-    background-color: pink;
-    align-items: center;
+body {
+    background-image: url('img/Untitled\ Project.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+
+}
+
+@font-face {
+    font-family: Cutive;
+    src: url(font/CutiveMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: Quick;
+    src: url(font/Quicksand-VariableFont_wght.ttf);
+}
+
+.titulo {
+    margin-top: -500px;
+    margin-left: 280px;
+    font-family: Cutive;
     display: flex;
 }
 
-h2{
-    margin-top: 0;
-}
 
-.container{
+/* .quadrado{
+    display: flex;
+    width: 210px;
+    height: 30px;
+    background-image: url('img/carta.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: -140px;
+    margin-top: -550px;
+ 
+} */
+
+
+.container {
+    text-align: center;
+    align-items: center;
     display: flex;
     width: 700px;
-    height: 600px;
+    height: 660px;
+    margin-top: -10px;
     background-color: rgb(255, 255, 255);
-    margin-top: 60px;
-    border-radius: 12px;
+    margin-top: 10px;
     box-shadow: 10px, 10px, 10px, 10px black;
+}
+
+#contato-Form, .titulo{
+    margin-bottom: 80px;
+}
+
+
+
+#Mensagem {
+    resize: none;
+}
+
+input {
+    display: flex;
+    width: 500px;
+    height: 30px;
+    margin-left: -340px;
+    margin-bottom: 20px;
+}
+#contato-Form{
+    margin-top: 50px;
+}
+
+#Mensagem{
+    width: 500px;
+    height:100px ;
+    margin-left: -340px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+/* Estilo do botão */
+#mostrar-contatos, #ocultar-contatos, #adicionar{
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.573);
+   
+}
+
+
+.botoes{
+    display: flex; /* Cria um contexto flexível para os botões */
+    justify-content: space-between; /* Distribui o espaço entre os botões */
+}
+
+button {
+    padding: 10px 20px; /* Adiciona preenchimento para espaçamento interno */
+    /* Outros estilos dos botões, como cores de fundo, cores de texto, etc. */
+}
+
+
+#ocultar-contatos{
+    margin-left: -550px;
+    margin-top: 265px;
+}
+
+#adicionar{
+    margin-left: -710px;
+
+}
+
+
+#mostrar-contatos{
+    margin-left: -130px;
+    margin-top: 265px;
+}
+
+#contato-lista{
+    font-family: Quick;
+  margin-top: 450px;
+  margin-left: -490px;
+    display: flex;
 }

@@ -1,9 +1,10 @@
 //definindo a classe de contato
 class Contatos {
-    constructor(nome, email, telefone) {
+    constructor(nome, email, telefone, Mensagem) {
         this.nome = nome;
         this.email = email;
         this.telefone = telefone;
+        this.Mensagem = Mensagem;
     }
 }
 
@@ -26,7 +27,7 @@ class GerenciadorContatos {
 
         for (const contato of this.contatos) {
             const li = document.createElement('li');
-            li.innerHTML = `${contato.nome} - ${contato.email} - ${contato.telefone}`;
+            li.innerHTML = `${contato.nome} - ${contato.email} - ${contato.telefone} - ${contato.Mensagem}`;
 
             listaContatos.appendChild(li)
         }
@@ -43,22 +44,25 @@ const telefoneForm = document.getElementById('tel');
 const mostrarContatos = document.getElementById('mostrar-contatos');
 const ocultarContatos = document.getElementById('ocultar-contatos');
 const listaContatos = document.getElementById('contato-lista');
+const MensagemForm = document.getElementById('Mensagem');
 
 contatoForm.addEventListener('submit', (event) =>{
     event.preventDefault();
     const nome = nomeForm.value;
     const email = emailForm.value;
     const telefone = telefoneForm.value;
+    const Mensagem = MensagemForm.value;
 
     //criando objeto na classe contato
 
-    const contato = new Contatos(nome, email, telefone);
+    const contato = new Contatos(nome, email, telefone, Mensagem);
 
     gerenciadorContatos.adicionarContato(contato);
 
     nomeForm.value = ''
     emailForm.value = ''
     telefoneForm.value = ''
+    MensagemForm.value = ''
 
 });
 
